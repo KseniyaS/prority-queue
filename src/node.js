@@ -18,21 +18,22 @@ class Node {
 	}
 
 	removeChild(node) {
+
 		if (this.left != node && this.right != node){
 			throw error;
 		}
 		else if (this.left == node) {
 			this.left = null;
+
 		}
 		else if (this.right == node) {
 			this.right =null;
+
 		}
 	}
 
 	remove() {
-		if (this.Node) {
-			
-		}
+
 	}
 
 	swapWithParent() {
