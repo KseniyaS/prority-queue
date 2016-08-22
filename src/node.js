@@ -15,10 +15,10 @@ class Node {
 		else if(this.right === null) {
 			this.right = node;
 		}
+		node.parent = this;
 	}
 
 	removeChild(node) {
-
 		if (this.left != node && this.right != node){
 			throw error;
 		}
@@ -28,16 +28,19 @@ class Node {
 		}
 		else if (this.right == node) {
 			this.right =null;
-
 		}
+		node.parent = null;
 	}
 
 	remove() {
+		if (this.parent != null) {
+			this.parent.removeChild(this);
+		}
 
 	}
 
 	swapWithParent() {
-		
+
 	}
 }
 
