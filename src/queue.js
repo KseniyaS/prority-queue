@@ -18,9 +18,11 @@ class PriorityQueue {
 	}
 
 	size() {
+		 return this.heap.size();
 	}
 
 	isEmpty() {
+		 return this.heap.isEmpty();
 
 	}
 }

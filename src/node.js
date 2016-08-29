@@ -40,8 +40,6 @@ class Node {
 	}
 
 	swapWithParent() {
-		var parent = null;
-		var parentOfParent = null;
 
 	}
 }
